@@ -1,0 +1,25 @@
+cat > .gitignore <<'EOF'
+# Python environment
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# MLflow local database and artifacts
+mlflow.db
+mlartifacts/
+mlruns/
+
+# Generated datasets and reports
+reference.csv
+current.csv
+reports/
+
+# macOS
+.DS_Store
+EOF
